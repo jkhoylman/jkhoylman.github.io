@@ -2,11 +2,20 @@ $danger-red: #dc3545;
 
 #main {
 	min-height: calc(100vh - 225px);
+	margin-top: 1em;
+}
+
+.project, .course, .job {
+	margin-bottom: 2em;
 }
 
 .inverted-image {
 	-webkit-filter: invert(100%);
     filter: invert(100%);
+}
+
+.sticky-offset {
+	top: 80px;
 }
 
 /*
@@ -17,4 +26,18 @@ $danger-red: #dc3545;
 
 .red-border {
 	border-color: $danger-red;
+}
+
+.nav-link {
+	color: rgba(255, 255, 255, 1.0) !important;
+	&:hover {
+		color: rgba(255, 255, 255, 0.5) !important;
+	}
+}
+
+.navbar-brand > img {
+	opacity: 1.0;
+	&:hover {
+		opacity: 0.5;
+	}
 }
