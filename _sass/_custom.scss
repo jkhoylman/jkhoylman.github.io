@@ -5,8 +5,16 @@ $danger-red: #dc3545;
 	margin-top: 1em;
 }
 
-.project, .course, .job {
-	margin-bottom: 2em;
+.project {
+	margin-bottom: 2em !important;
+}
+
+.course {
+	margin-bottom: 2em !important;
+}
+
+.job {
+	margin-bottom: 2em !important;
 }
 
 .inverted-image {
@@ -18,11 +26,6 @@ $danger-red: #dc3545;
 	top: 80px;
 }
 
-/*
-.footer-spacer {
-	padding-left: calc(20vw);
-}
-*/
 
 .red-border {
 	border-color: $danger-red;

@@ -7594,8 +7594,14 @@ a.text-dark:hover, a.text-dark:focus {
   min-height: calc(100vh - 225px);
   margin-top: 1em; }
 
-.project, .course, .job {
-  margin-bottom: 2em; }
+.project {
+  margin-bottom: 2em !important; }
+
+.course {
+  margin-bottom: 2em !important; }
+
+.job {
+  margin-bottom: 2em !important; }
 
 .inverted-image {
   -webkit-filter: invert(100%);
@@ -7604,11 +7610,6 @@ a.text-dark:hover, a.text-dark:focus {
 .sticky-offset {
   top: 80px; }
 
-/*
-.footer-spacer {
-	padding-left: calc(20vw);
-}
-*/
 .red-border {
   border-color: #dc3545; }
 
