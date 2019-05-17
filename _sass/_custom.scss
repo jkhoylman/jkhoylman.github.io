@@ -1,8 +1,8 @@
 $danger-red: #dc3545;
 
 #main {
-	min-height: calc(100vh - 225px);
-	margin-top: 1em;
+	min-height: calc(100vh - 225px) !important;
+	margin-top: 1em !important;
 }
 
 .project {
@@ -18,17 +18,17 @@ $danger-red: #dc3545;
 }
 
 .inverted-image {
-	-webkit-filter: invert(100%);
-    filter: invert(100%);
+	-webkit-filter: invert(100%) !important;
+    filter: invert(100%) !important;
 }
 
 .sticky-offset {
-	top: 80px;
+	top: 80px !important;
 }
 
 
 .red-border {
-	border-color: $danger-red;
+	border-color: $danger-red !important;
 }
 
 .nav-link {
@@ -38,9 +38,9 @@ $danger-red: #dc3545;
 	}
 }
 
-.navbar-brand > img {
-	opacity: 1.0;
+.navbar-brand {
+	opacity: 1.0 !important;
 	&:hover {
-		opacity: 0.5;
+		opacity: 0.5 !important;
 	}
 }

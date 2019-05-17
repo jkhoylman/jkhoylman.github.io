@@ -7591,8 +7591,8 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 #main {
-  min-height: calc(100vh - 225px);
-  margin-top: 1em; }
+  min-height: calc(100vh - 225px) !important;
+  margin-top: 1em !important; }
 
 .project {
   margin-bottom: 2em !important; }
@@ -7604,21 +7604,21 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 2em !important; }
 
 .inverted-image {
-  -webkit-filter: invert(100%);
-  filter: invert(100%); }
+  -webkit-filter: invert(100%) !important;
+  filter: invert(100%) !important; }
 
 .sticky-offset {
-  top: 80px; }
+  top: 80px !important; }
 
 .red-border {
-  border-color: #dc3545; }
+  border-color: #dc3545 !important; }
 
 .nav-link {
   color: white !important; }
   .nav-link:hover {
     color: rgba(255, 255, 255, 0.5) !important; }
 
-.navbar-brand > img {
-  opacity: 1.0; }
-  .navbar-brand > img:hover {
-    opacity: 0.5; }
+.navbar-brand {
+  opacity: 1.0 !important; }
+  .navbar-brand:hover {
+    opacity: 0.5 !important; }
