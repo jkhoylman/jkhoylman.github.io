@@ -7590,8 +7590,10 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+/*Font size is 16pt so 1em is 21px*/
 #main {
-  min-height: calc(100vh - 225px) !important;
+  /*min-height: calc(100vh - 225px) !important;*/
+  min-height: calc(100vh - 6em) !important;
   margin-top: 1em !important; }
 
 .project {
@@ -7609,6 +7611,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .sticky-offset {
   top: 80px !important; }
+
+hr {
+  border-color: black; }
 
 .red-border {
   border-color: #dc3545 !important; }

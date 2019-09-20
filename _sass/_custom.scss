@@ -1,7 +1,9 @@
 $danger-red: #dc3545;
+/*Font size is 16pt so 1em is 21px*/
 
 #main {
-	min-height: calc(100vh - 225px) !important;
+	/*min-height: calc(100vh - 225px) !important;*/
+	min-height: calc(100vh - 6em) !important;
 	margin-top: 1em !important;
 }
 
@@ -26,6 +28,9 @@ $danger-red: #dc3545;
 	top: 80px !important;
 }
 
+hr {
+	border-color: rgba(0,0,0,1.0);
+}
 
 .red-border {
 	border-color: $danger-red !important;
