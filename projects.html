@@ -6,7 +6,14 @@ title: Projects
 	<div class="row">
 		<!--Side navbar-->
 		<div class="col-sm-12 col-md-3 col-lg-2">
-			<div class="list-group sticky-top sticky-offset d-sm-none d-md-block text-center" id="project-years" style="top: 71px !important; margin-bottom: 2em !important;">
+			<div class="list-group sticky-top sticky-offset d-none d-md-block text-center" id="project-years" style="top: 71px !important; margin-bottom: 2em !important;">
+				<a class="list-group-item list-group-item-action" href="#2019">2019</a>
+				<a class="list-group-item list-group-item-action" href="#2018">2018</a>
+				<a class="list-group-item list-group-item-action" href="#2017">2017</a>
+				<a class="list-group-item list-group-item-action" href="#2016">2016</a>
+				<a class="list-group-item list-group-item-action" href="#earlier">Earlier</a>
+			</div>
+			<div class="list-group d-md-none text-center" id="project-years" style="top: 71px !important; margin-bottom: 2em !important;">
 				<a class="list-group-item list-group-item-action" href="#2019">2019</a>
 				<a class="list-group-item list-group-item-action" href="#2018">2018</a>
 				<a class="list-group-item list-group-item-action" href="#2017">2017</a>
@@ -19,8 +26,7 @@ title: Projects
 		
 		<!--Project cards-->
 		<div class="col-sm-12 col-md-8 col-lg-8">
-		<!--<div class= "container">-->
-			<h4 id="2019">2019</h4>
+			<h4 id="2019" class="divider"><div class="divider-spacer"></div>2019</h4>
 			<hr style="color: black; background-color: black;"/>
 			
 			<div class="card project">
@@ -37,7 +43,7 @@ title: Projects
 			
 			<div style="margin-top: 5em;"></div>
 			
-			<h4 id="2018">2018</h4>
+			<h4 id="2018" class="divider"><div class="divider-spacer"></div>2018</h4>
 			<hr style="color: black; background-color: black;"/>
 			
 			<div class="card project">
@@ -64,7 +70,7 @@ title: Projects
 			
 			<div style="margin-top: 5em;"></div>
 			
-			<h4 id="2017">2017</h4>
+			<h4 id="2017" class="divider"><div class="divider-spacer"></div>2017</h4>
 			<hr style="color: black; background-color: black;"/>
 			
 			<div class="card project">
@@ -90,7 +96,7 @@ title: Projects
 			
 			<div style="margin-top: 5em;"></div>
 			
-			<h4 id="2016">2016</h4>
+			<h4 id="2016" class="divider"><div class="divider-spacer"></div>2016</h4>
 			<hr style="color: black; background-color: black;"/>
 			
 			<div class="card project">
@@ -106,7 +112,7 @@ title: Projects
 			
 			<div style="margin-top: 5em;"></div>
 			
-			<h4 id="earlier">Earlier</h4>
+			<h4 id="earlier" class="divider"><div class="divider-spacer"></div>Earlier</h4>
 			<hr style="color: black; background-color: black;"/>
 			
 			<div class="card project">
@@ -121,7 +127,18 @@ title: Projects
 			</div>
 			
 			<div style="margin-bottom: 20em;"></div>
-		<!--</div>-->
 		</div>
 	</div>
 </div>
+
+<script>
+	var offset = document.getElementById("header").offsetHeight;
+	var all = document.getElementsByClassName("divider-spacer");
+	console.log(offset);
+	for(var i = 0; i < all.length; i++)
+	{
+		all[i].style.marginTop = -1 * offset + "px";
+		all[i].style.height = offset + "px";
+		console.log(all[i].style.marginTop);
+	}
+</script>

@@ -1,2 +1,35 @@
 title: Jacob Hoylman
 description: The official website of Jacob Hoylman
+
+collections_dir: collections
+
+collections:
+    courses:
+        order:
+            - cse2221.md
+            - cse2231.md
+            - cse2321.md
+            - cse2331.md
+            - cse2421.md
+            - cse2431.md
+            - cse3231.md
+            - cse3232.md
+            - cse3241.md
+            - cse3341.md
+            - cse3421.md
+            - cse3461.md
+            - cse3541.md
+            - cse3901.md
+            - cse5441.md
+            - cse5472.md
+            - cse5539.md
+            - cse5911.md
+            - math4181.md
+            - math4182.md
+            - math4573.md
+            - math4575.md
+            - engr1281.md
+            - engr1282.md
+            - ece2020.md
+            - ece2060.md
+    projects:

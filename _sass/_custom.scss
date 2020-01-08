@@ -58,3 +58,9 @@ hr {
 .navbar-collapse.collapse.in {
   display: block!important;
 }
+
+.divider-spacer {
+	display: block;
+	content:" ";
+	visibility: hidden;
+}
