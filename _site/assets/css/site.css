@@ -7637,3 +7637,10 @@ hr {
   display: block;
   content: " ";
   visibility: hidden; }
+
+.center-image {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block; }

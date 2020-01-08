@@ -32,4 +32,20 @@ collections:
             - engr1282.md
             - ece2020.md
             - ece2060.md
-    projects:
+    projects_2019:
+        order:
+            - hackathon.md
+            - datafest.md
+    projects_2018:
+        order:
+            - hackathon.md
+            - datafest.md
+    projects_2017:
+        order:
+            - hackathon.md
+    projects_2016:
+        order:
+            - hackathon.md
+    projects_earlier:
+        order:
+            - patent.md
