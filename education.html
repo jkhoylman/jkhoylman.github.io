@@ -1,0 +1,203 @@
+---
+layout: default
+title: Education
+---
+<div class="container">
+	<div class="row" style="margin-bottom: 2em;">
+			<div class="col-md-9 col-sm-12">
+				<h4>Bachelor's of Science</h4>
+				The Ohio State University, Expected graduation May 2020<br/>
+				Majoring in Computer Science and Engineering with Honors<br/>
+				Minoring in Mathematics with Honors<br/>
+				3.581 Cumulative GPA (4.0 scale), Dean's List 5 semesters
+			</div>
+			<div class="col-md-3 col-sm-0">
+				<div class="d-none d-md-block">
+					<img src="assets/images/osu_logo.png" style="min-width: 100px; width: 80%; float: right; display: block; margin: auto auto;">
+				</div>
+			</div>
+	</div>
+
+	<div class="row" style="margin-bottom: 2em;">
+		<div class="col-md-9 col-sm-12">
+			<h4>High School Diploma</h4>
+			Dublin Coffman High School, June 4th, 2016<br/>
+			With Honors Diploma, Summa Cum Laude<br/>
+			4.447 Cumulative GPA (4.0 scale)
+		</div>
+		<div class="col-md-3 col-sm-0">
+			<div class="d-none d-md-block">
+				<img src="assets/images/coffman_logo.jpg" style="min-width: 100px; width: 80%; float: right; display: block; margin: auto auto;">
+			</div>
+		</div>
+	</div>
+	
+	<h4>Relevant Coursework</h4>
+	<br/>
+	
+	<div style="max-height: 30em; overflow: auto; margin-bottom: 3em;">
+		{% for course in site.courses %}
+			<div class="card course">
+				<div class="card-header">
+					{{ course.number }}: {{ course.title }}
+				</div>
+				<div class="card-body">
+					{{ course.content | markdownify }}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	
+	<h4>Projects</h4>
+	<br/>
+
+	<div class="row" style="max-height: 30em; overflow: auto; margin-bottom: 2em;">
+		<div class="col-sm-12 col-md-2 col-lg-2">
+			<div class="list-group sticky-top d-none d-md-block text-center" id="project-years" style="margin-bottom: 2em !important;">
+				<a class="list-group-item list-group-item-action" href="#2019">2019</a>
+				<a class="list-group-item list-group-item-action" href="#2018">2018</a>
+				<a class="list-group-item list-group-item-action" href="#2017">2017</a>
+				<a class="list-group-item list-group-item-action" href="#2016">2016</a>
+				<a class="list-group-item list-group-item-action" href="#earlier">Earlier</a>
+			</div>
+			<div class="list-group d-md-none text-center" id="project-years" style="margin-bottom: 2em !important;">
+				<a class="list-group-item list-group-item-action" href="#2019">2019</a>
+				<a class="list-group-item list-group-item-action" href="#2018">2018</a>
+				<a class="list-group-item list-group-item-action" href="#2017">2017</a>
+				<a class="list-group-item list-group-item-action" href="#2016">2016</a>
+				<a class="list-group-item list-group-item-action" href="#earlier">Earlier</a>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-10 col-lg-10">
+			<h4 id="2019" class="divider"><div class="divider-spacer"></div>2019</h4>
+			<hr style="color: black; background-color: black;"/>
+
+			{% for project in site.projects_2019 %}
+				<div class="card project">
+					<div class="card-header">
+						{{ project.event }}
+
+						{% if project.date != "" %}
+							<span style="float: right;">{{ project.dateof }}</span>
+						{% endif %}
+					</div>
+					<div class="card-body">
+						{% if project.title != "" %}
+							<h5 class="card-title">{{ project.title }}</h5>
+						{% endif %}
+
+						{% if project.collaborators != "" %}
+							<h6 class="card-subtitle mb-2 text-muted">Collaborators: {{ project.collaborators }}</h6>
+						{% endif %}
+
+						{{ project.content | markdownify }}
+					</div>
+				</div>
+			{% endfor %}
+
+			<h4 id="2018" class="divider"><div class="divider-spacer"></div>2018</h4>
+			<hr style="color: black; background-color: black;"/>
+
+			{% for project in site.projects_2018 %}
+				<div class="card project">
+					<div class="card-header">
+						{{ project.event }}
+
+						{% if project.date != "" %}
+							<span style="float: right;">{{ project.dateof }}</span>
+						{% endif %}
+					</div>
+					<div class="card-body">
+						{% if project.title != "" %}
+							<h5 class="card-title">{{ project.title }}</h5>
+						{% endif %}
+
+						{% if project.collaborators != "" %}
+							<h6 class="card-subtitle mb-2 text-muted">Collaborators: {{ project.collaborators }}</h6>
+						{% endif %}
+
+						{{ project.content | markdownify }}
+					</div>
+				</div>
+			{% endfor %}
+
+			<h4 id="2017" class="divider"><div class="divider-spacer"></div>2017</h4>
+			<hr style="color: black; background-color: black;"/>
+
+			{% for project in site.projects_2017 %}
+				<div class="card project">
+					<div class="card-header">
+						{{ project.event }}
+
+						{% if project.date != "" %}
+							<span style="float: right;">{{ project.dateof }}</span>
+						{% endif %}
+					</div>
+					<div class="card-body">
+						{% if project.title != "" %}
+							<h5 class="card-title">{{ project.title }}</h5>
+						{% endif %}
+
+						{% if project.collaborators != "" %}
+							<h6 class="card-subtitle mb-2 text-muted">Collaborators: {{ project.collaborators }}</h6>
+						{% endif %}
+
+						{{ project.content | markdownify }}
+					</div>
+				</div>
+			{% endfor %}
+
+			<h4 id="2016" class="divider"><div class="divider-spacer"></div>2016</h4>
+			<hr style="color: black; background-color: black;"/>
+
+			{% for project in site.projects_2016 %}
+				<div class="card project">
+					<div class="card-header">
+						{{ project.event }}
+
+						{% if project.date != "" %}
+							<span style="float: right;">{{ project.dateof }}</span>
+						{% endif %}
+					</div>
+					<div class="card-body">
+						{% if project.title != "" %}
+							<h5 class="card-title">{{ project.title }}</h5>
+						{% endif %}
+
+						{% if project.collaborators != "" %}
+							<h6 class="card-subtitle mb-2 text-muted">Collaborators: {{ project.collaborators }}</h6>
+						{% endif %}
+
+						{{ project.content | markdownify }}
+					</div>
+				</div>
+			{% endfor %}
+
+			<h4 id="earlier" class="divider"><div class="divider-spacer"></div>Earlier</h4>
+			<hr style="color: black; background-color: black;"/>
+
+			{% for project in site.projects_earlier %}
+				<div class="card project">
+					<div class="card-header">
+						{{ project.event }}
+
+						{% if project.date != "" %}
+							<span style="float: right;">{{ project.dateof }}</span>
+						{% endif %}
+					</div>
+					<div class="card-body">
+						{% if project.title != "" %}
+							<h5 class="card-title">{{ project.title }}</h5>
+						{% endif %}
+
+						{% if project.collaborators != "" %}
+							<h6 class="card-subtitle mb-2 text-muted">Collaborators: {{ project.collaborators }}</h6>
+						{% endif %}
+
+						{{ project.content | markdownify }}
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
