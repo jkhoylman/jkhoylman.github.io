@@ -8928,75 +8928,95 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+.page-header {
+  display: flex;
+  max-width: 80%;
+}
+.page-header .icon-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 /*Font size is 16pt so 1em is 21px*/
+/*
 #main {
-  min-height: calc(100vh - 6em) !important;
-  margin-top: 1em !important;
+	min-height: calc(100vh - 6em) !important;
+	margin-top: 1em !important;
 }
 
 .project {
-  margin-bottom: 2em !important;
+	margin-bottom: 2em !important;
 }
 
 .course {
-  margin-bottom: 2em !important;
+	margin-bottom: 2em !important;
 }
 
 .job {
-  margin-bottom: 2em !important;
+	margin-bottom: 2em !important;
 }
 
 .inverted-image {
-  -webkit-filter: invert(100%) !important;
-  filter: invert(100%) !important;
+	-webkit-filter: invert(100%) !important;
+    filter: invert(100%) !important;
 }
 
 .sticky-offset {
-  top: 80px !important;
+	top: 80px !important;
 }
 
 hr {
-  border-color: rgb(0, 0, 0);
+	border-color: rgba(0,0,0,1.0);
 }
 
 .red-border {
-  border-color: #dc3545 !important;
+	border-color: $danger-red !important;
 }
 
 .nav-link {
-  color: rgb(255, 255, 255) !important;
-}
-.nav-link:hover {
-  color: rgba(255, 255, 255, 0.5) !important;
+	color: rgba(255, 255, 255, 1.0) !important;
+	&:hover {
+		color: rgba(255, 255, 255, 0.5) !important;
+	}
 }
 
 .navbar-brand {
-  opacity: 1 !important;
-}
-.navbar-brand:hover {
-  opacity: 0.5 !important;
+	opacity: 1.0 !important;
+	&:hover {
+		opacity: 0.5 !important;
+	}
 }
 
-.navbar-toggler:focus {
-  outline: none !important;
+.navbar-toggler {
+	&:focus {
+		outline: none !important;
+	}
 }
 
 .navbar-collapse.collapse.in {
-  display: block !important;
+  display: block!important;
 }
 
 .divider-spacer {
-  display: block;
-  content: " ";
-  visibility: hidden;
+	display: block;
+	content:" ";
+	visibility: hidden;
 }
 
 .center-image {
-  margin-top: auto !important;
-  margin-bottom: auto !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  display: block;
+	margin-top: auto !important;
+	margin-bottom: auto !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	display: block;
 }
+	*/
 
 /*# sourceMappingURL=site.css.map */

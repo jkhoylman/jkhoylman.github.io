@@ -1,0 +1,14 @@
+.page-header {
+    display: flex;
+    max-width: 80%;
+
+    .title-container {
+
+    }
+
+    .icon-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
