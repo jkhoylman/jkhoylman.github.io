@@ -1,6 +1,10 @@
 title: Jacob Hoylman
 description: The official website of Jacob Hoylman
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
 collections_dir: collections
 
 collections:

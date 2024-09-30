@@ -1,11 +1,11 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem 'jekyll'
-gem 'jekyll-watch'
+source "https://rubygems.org"
 
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+# gem "rails"
+gem "jekyll"
 
 group :jekyll_plugins do
-	gem 'jekyll-sitemap'
-	gem 'jekyll-seo-tag'
+  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
 end
