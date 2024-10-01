@@ -1,0 +1,9 @@
+{
+  "short_name": "Jacob Hoylman",
+  "name": "Official Website of Jacob Hoylman",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
