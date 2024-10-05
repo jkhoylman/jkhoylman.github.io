@@ -1,9 +1,37 @@
 @import 'theme';
 
 .footer {
+    display: flex;
     position: absolute;
     bottom: 0;
     width: 100%;
 
+    padding: 1em 0;
+
+    flex-direction: column;
+    align-items: center;
+
     background-color: $theme-primary;
+    color: $color-against-primary;
+
+    .footer-icon-container {
+        display: flex;
+
+        .footer-icon {
+            display: initial;
+    
+            width: 2em;
+    
+            margin-left: 0.25em;
+            margin-right: 0.25em;
+        }
+
+        .icon-fill path {
+            fill: $color-against-primary;
+        }
+    
+        .icon-stroke path {
+            stroke: $color-against-primary;
+        }
+    }
 }

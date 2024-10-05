@@ -5,5 +5,17 @@
   color: $default-text-color;
   line-height: $default-line-height;
 
+  display: flex;
+
   /* text-align: center; */
+}
+
+/* CONVENIENCE CLASSES */
+
+.center-image {
+	margin-top: auto !important;
+	margin-bottom: auto !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	display: block;
 }

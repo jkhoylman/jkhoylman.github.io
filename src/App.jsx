@@ -8,6 +8,7 @@ import './css/app.scss';
 const App = () => {
   return (
     <div className="app">
+
         <Header/>
         <Body/>
         <Footer/>
