@@ -12,7 +12,6 @@ const App = () => {
 
   return (
     <div className="app">
-
         <Header setActivePane={setActivePane}/>
         <Body activePane={activePane}/>
         <Footer/>

@@ -1,6 +1,8 @@
 import React from 'react';
 import '../css/header.scss';
 
+import constants from '../constants/constants';
+
 const Header = ({
   setActivePane,
 }) => {

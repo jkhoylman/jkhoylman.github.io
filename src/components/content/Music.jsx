@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Home = () => {
+const Music = () => {
 
   return (
     <div>
-        Home
+        Music
     </div>
   );
 }
 
-export default Home;
+export default Music;
