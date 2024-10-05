@@ -1,12 +1,17 @@
-import React, {useState} from 'react';
-import constants from '../constants/constants';
+import React from 'react';
 import '../css/body.scss';
 
-const Body = () => {
-  const [active, setActive] = useState(constants.HOME_ID);
+import Home from './content/Home';
+
+import constants from '../constants/constants';
+
+const Body = ({
+    activePane,
+}) => {
 
   return (
     <div className="body">
+        {activePane === constants.HOME_ID && <Home/>}
     </div>
   );
 }

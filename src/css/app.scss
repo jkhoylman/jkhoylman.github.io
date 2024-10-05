@@ -1,11 +1,16 @@
 @import 'theme';
 
+body {
+  background-color: $default-background-color;
+}
+
 .app {  
   background-color: $default-background-color;
   color: $default-text-color;
   line-height: $default-line-height;
 
   display: flex;
+  flex-direction: column;
 
   /* text-align: center; */
 }
