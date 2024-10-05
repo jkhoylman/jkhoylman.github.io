@@ -1,0 +1,9 @@
+@import 'theme';
+
+.app {  
+  background-color: $default-background-color;
+  color: $default-text-color;
+  line-height: $default-line-height;
+
+  /* text-align: center; */
+}
