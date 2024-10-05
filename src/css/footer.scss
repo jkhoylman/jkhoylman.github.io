@@ -17,6 +17,10 @@
     .footer-icon-container {
         display: flex;
 
+        .icon-link {
+            display: flex;
+        }
+
         .footer-icon {
             display: initial;
     
