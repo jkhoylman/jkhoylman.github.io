@@ -17,6 +17,44 @@
 
     .icon-container {
         display: flex;
+
+        .header-icon {
+            display: initial;
+    
+            width: 3em;
+    
+            margin-left: 0.25em;
+            margin-right: 0.25em;
+
+            cursor: pointer;
+            &.active {
+                cursor: alias;
+            }
+        }
+
+        .icon-fill {
+            path {
+                fill: $theme-primary;
+            }
+            &:hover path {
+                fill: $theme-hover;
+            }
+            &.active path {
+                fill: $theme-active;
+            }
+        }
+    
+        .icon-stroke path {
+            path {
+                stroke: $theme-primary;
+            }
+            &:hover path {
+                stroke: $theme-hover;
+            }
+            &.active path {
+                stroke: $theme-active;
+            }
+        }
     }
 
     .divider {

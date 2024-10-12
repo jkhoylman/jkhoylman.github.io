@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div className="app">
-        <Header setActivePane={setActivePane}/>
+        <Header activePane={activePane} setActivePane={setActivePane}/>
         <Body activePane={activePane}/>
         <Footer/>
     </div>
