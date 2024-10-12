@@ -1,0 +1,38 @@
+@import '../theme';
+
+.home {
+    margin-top: 0.5em;
+
+    .portrait {
+        float: left;
+        border-radius: 1em;
+
+        &.small {
+            width: 150px;
+            margin: 0 auto;
+            float: none;
+        }
+
+        &.large {
+            margin-right: 1em;
+            height: 200px;
+        }
+    }
+
+    .section-one {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            display: flow-root;
+        }
+    }
+
+    .section-two {
+        clear: both;
+    }
+
+    .section-three {
+        display: flex;
+    }
+}

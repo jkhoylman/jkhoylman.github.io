@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../css/body.scss';
 
 import Home from './content/Home';
+import Bio from './content/Bio';
 import Saluterra from './content/Saluterra';
 import Music from './content/Music';
 import Shirts from './content/Shirts';
@@ -17,6 +18,9 @@ const Body = ({
   switch(activePane) {
       case constants.HOME_ID:
         content = <Home />;
+        break;
+      case constants.BIO_ID:
+        content = <Bio />;
         break;
       case constants.SALUTERRA_ID:
         content = <Saluterra />;

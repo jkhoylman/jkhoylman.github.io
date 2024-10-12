@@ -5,6 +5,7 @@ import '../css/header.scss';
 import constants from '../constants/constants';
 
 import homeLogo from '../assets/icons/home.svg';
+import bioLogo from '../assets/icons/bio.svg';
 import itchLogo from '../assets/icons/itchio.svg';
 import infoLogo from '../assets/icons/info-circle.svg';
 
@@ -44,6 +45,7 @@ const Header = ({
     <div className="header">
       <div className="icon-container">
         <Icon id={constants.HOME_ID} setActivePane={setActivePane} activePane={activePane} icon={homeLogo} className={"icon-stroke"} href={"#"}/>
+        <Icon id={constants.BIO_ID} setActivePane={setActivePane} activePane={activePane} icon={bioLogo} className={"icon-stroke"} href={"#"}/>
         {/* <Icon id={constants.SALUTERRA_ID} setActivePane={setActivePane} activePane={activePane} icon={itchLogo} className={"icon-fill"} href={"#"} /> */}
         <Icon id={constants.INFO_ID} setActivePane={setActivePane} activePane={activePane} icon={infoLogo} className={"icon-stroke"} href={"#"}/>
       </div>

@@ -5,4 +5,13 @@
     width: 80%;
     max-width: $body-max-width;
     margin: 0 auto;
+
+    ul {
+        list-style-type: disclosure-closed;
+        margin-top: 0;
+
+        ::marker {
+            color: $theme-primary;
+        }
+    }
 }
