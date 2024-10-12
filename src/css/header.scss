@@ -4,17 +4,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1em;
 
-    .title-container {
-        text-align: center;
-        .title {
+    width: 80%;
+    max-width: $body-max-width;
+    margin: 1em auto 0 auto;
 
-        }
-        .subtitle {
-
-        }
-    }
+    border: 2px solid $theme-primary;
+    border-radius: 1em;
+    padding: 0.5em;
 
     .icon-container {
         display: flex;
@@ -31,6 +28,18 @@
             &.active {
                 cursor: alias;
             }
+
+            .active-underline {
+                border: 1px solid $theme-primary;
+                margin: 0 auto;
+                width: 50%;
+            }
+
+            &:hover {
+                .active-underline {
+                    border: 1px solid $theme-hover;
+                }
+            }
         }
 
         .icon-fill {
@@ -39,9 +48,6 @@
             }
             &:hover path {
                 fill: $theme-hover;
-            }
-            &.active path {
-                fill: $theme-active;
             }
         }
     
@@ -52,14 +58,6 @@
             &:hover path {
                 stroke: $theme-hover;
             }
-            &.active path {
-                stroke: $theme-active;
-            }
         }
-    }
-
-    .divider {
-        border: 1px solid $theme-primary;
-        width: 90%;
     }
 }

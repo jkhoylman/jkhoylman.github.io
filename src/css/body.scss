@@ -3,6 +3,6 @@
 .body {
     display: flex;
     width: 80%;
-    max-width: 1000px;
+    max-width: $body-max-width;
     margin: 0 auto;
 }

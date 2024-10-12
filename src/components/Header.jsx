@@ -29,7 +29,10 @@ const Icon = ({
   }
 
   return (
-    <ReactSVG className={cn} src={icon} onClick={onClick}/>
+    <div className={cn}>
+      <ReactSVG src={icon} onClick={onClick}/>
+      {isActive && <hr className="active-underline"/>}
+    </div>
   );
 }
 
@@ -39,13 +42,8 @@ const Header = ({
 }) => {
   return (
     <div className="header">
-      <div className="title-container">
-          <div className="title">Jacob Hoylman</div>
-          <div className="subtitle">a man of many pursuits</div>
-      </div>
-      <hr className="divider"/>
       <div className="icon-container">
-        <Icon id={constants.HOME_ID} setActivePane={setActivePane} activePane={activePane} icon={homeLogo} className={"icon-fill"} href={"#"}/>
+        <Icon id={constants.HOME_ID} setActivePane={setActivePane} activePane={activePane} icon={homeLogo} className={"icon-stroke"} href={"#"}/>
         {/* <Icon id={constants.SALUTERRA_ID} setActivePane={setActivePane} activePane={activePane} icon={itchLogo} className={"icon-fill"} href={"#"} /> */}
         <Icon id={constants.INFO_ID} setActivePane={setActivePane} activePane={activePane} icon={infoLogo} className={"icon-stroke"} href={"#"}/>
       </div>
