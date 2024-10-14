@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0fab1bcd.css",
+    "main.js": "/static/js/main.389b34b1.js",
+    "static/media/itchio.svg": "/static/media/itchio.73b2f0dcf22c1cbff205d8e561842f71.svg",
+    "static/media/github-square.svg": "/static/media/github-square.41946c6adf59ea37d2cc7c33ad4bf2ef.svg",
+    "static/media/twitter.svg": "/static/media/twitter.712c95bfb95d0380fb31180796bf5916.svg",
+    "static/media/spotify.svg": "/static/media/spotify.862f80b2a4ef1f265f10c9dec533bbfb.svg",
+    "static/media/instagram.svg": "/static/media/instagram.68930b6445cd81be32115d072a2fb716.svg",
+    "index.html": "/index.html",
+    "static/media/info-circle.svg": "/static/media/info-circle.8f7e360bbdc60548db8a39098616ecb8.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.4dd0f9efff45104c4404eb8aa170ea6c.svg",
+    "static/media/home.svg": "/static/media/home.05836b5761a6eb0db4f393ef026934e7.svg",
+    "static/media/bio.svg": "/static/media/bio.977881697932064def599d382d115ce6.svg",
+    "main.0fab1bcd.css.map": "/static/css/main.0fab1bcd.css.map",
+    "main.389b34b1.js.map": "/static/js/main.389b34b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fab1bcd.css",
+    "static/js/main.389b34b1.js"
+  ]
+}
