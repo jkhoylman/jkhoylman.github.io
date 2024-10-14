@@ -4,7 +4,7 @@
     display: flex;
     width: 80%;
     max-width: $body-max-width;
-    margin: 0 auto;
+    margin: 0 auto $footer-height auto;
 
     ul {
         list-style-type: disclosure-closed;

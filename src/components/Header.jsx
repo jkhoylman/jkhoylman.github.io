@@ -42,12 +42,14 @@ const Header = ({
   setActivePane,
 }) => {
   return (
-    <div className="header">
-      <div className="icon-container">
-        <Icon id={constants.HOME_ID} setActivePane={setActivePane} activePane={activePane} icon={homeLogo} className={"icon-stroke"} href={"#"}/>
-        <Icon id={constants.BIO_ID} setActivePane={setActivePane} activePane={activePane} icon={bioLogo} className={"icon-stroke"} href={"#"}/>
-        {/* <Icon id={constants.SALUTERRA_ID} setActivePane={setActivePane} activePane={activePane} icon={itchLogo} className={"icon-fill"} href={"#"} /> */}
-        <Icon id={constants.INFO_ID} setActivePane={setActivePane} activePane={activePane} icon={infoLogo} className={"icon-stroke"} href={"#"}/>
+    <div className="header-container">
+      <div className="header">
+        <div className="icon-container">
+          <Icon id={constants.HOME_ID} setActivePane={setActivePane} activePane={activePane} icon={homeLogo} className={"icon-stroke"} href={"#"}/>
+          <Icon id={constants.BIO_ID} setActivePane={setActivePane} activePane={activePane} icon={bioLogo} className={"icon-stroke"} href={"#"}/>
+          {/* <Icon id={constants.SALUTERRA_ID} setActivePane={setActivePane} activePane={activePane} icon={itchLogo} className={"icon-fill"} href={"#"} /> */}
+          <Icon id={constants.INFO_ID} setActivePane={setActivePane} activePane={activePane} icon={infoLogo} className={"icon-stroke"} href={"#"}/>
+        </div>
       </div>
     </div>
   );
